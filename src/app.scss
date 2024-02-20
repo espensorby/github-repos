@@ -1,0 +1,37 @@
+body {
+  max-width: 1440px;
+  padding-inline: 8px;
+  color: #eee;
+  background-color: #222;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-block: 48px;
+  color: #c3fff8;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+
+  .link-wrapper {
+    padding: 24px;
+    color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    text-decoration: none;
+  
+    &:hover {
+      color: #222;
+      background-color: #ddd;
+
+      .details .owner {
+        color: #006f62;
+      }
+    }
+  }
+}
